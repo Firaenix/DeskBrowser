@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0225C9C1511A67B00313CB9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0225C9B1511A67B00313CB9 /* Cocoa.framework */; };
+		A061C79D16242C5D005C41CB /* DeskBrowserIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = A061C79C16242C5D005C41CB /* DeskBrowserIcon.icns */; };
+		A061C79F16242C69005C41CB /* DeskBrowserIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = A061C79E16242C69005C41CB /* DeskBrowserIcon.icns */; };
+		A07FB1E8153D00BA00F4BE69 /* DbPlaqueIconiCloud-Round.icns in Resources */ = {isa = PBXBuildFile; fileRef = A07FB1E7153D00BA00F4BE69 /* DbPlaqueIconiCloud-Round.icns */; };
+		A0BFA8D813BD8BEA005E15EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0BFA8D613BD8BEA005E15EF /* InfoPlist.strings */; };
+		A0BFA8DA13BD8BEA005E15EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BFA8D913BD8BEA005E15EF /* main.m */; };
+		A0BFA8DE13BD8BEA005E15EF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A0BFA8DC13BD8BEA005E15EF /* Credits.rtf */; };
+		A0BFA8E113BD8BEA005E15EF /* DeskBrowserAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BFA8E013BD8BEA005E15EF /* DeskBrowserAppDelegate.m */; };
+		A0BFA8E413BD8BEA005E15EF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0BFA8E213BD8BEA005E15EF /* MainMenu.xib */; };
+		A0BFA8E713BD8BEA005E15EF /* DeskBrowser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0BFA8E513BD8BEA005E15EF /* DeskBrowser.xcdatamodeld */; };
+		A0BFA8EF13BD8BEA005E15EF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BFA8EE13BD8BEA005E15EF /* SenTestingKit.framework */; };
+		A0BFA8F813BD8BEA005E15EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0BFA8F613BD8BEA005E15EF /* InfoPlist.strings */; };
+		A0BFA8FA13BD8BEA005E15EF /* DeskBrowserTests.h in Resources */ = {isa = PBXBuildFile; fileRef = A0BFA8F913BD8BEA005E15EF /* DeskBrowserTests.h */; };
+		A0BFA8FC13BD8BEA005E15EF /* DeskBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BFA8FB13BD8BEA005E15EF /* DeskBrowserTests.m */; };
+		A0BFA90613BD8BF8005E15EF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BFA90513BD8BF8005E15EF /* WebKit.framework */; };
+		A0BFA90713BD8BFC005E15EF /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BFA8D013BD8BEA005E15EF /* AppKit.framework */; };
+		A0F256A71611CA13007B3EBB /* DeskBrowser-Helper.app in Copy Helper App */ = {isa = PBXBuildFile; fileRef = A0F256A41611CA01007B3EBB /* DeskBrowser-Helper.app */; };
+		A0F256A91611CA72007B3EBB /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F256A81611CA72007B3EBB /* ServiceManagement.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0BFA8F113BD8BEA005E15EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BFA8C013BD8BEA005E15EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0BFA8C813BD8BEA005E15EF;
+			remoteInfo = DeskBrowser;
+		};
+		A0F256A31611CA01007B3EBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0F2569E1611CA01007B3EBB /* DeskBrowser-Helper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0F256661611CA01007B3EBB;
+			remoteInfo = "DeskBrowser-Helper";
+		};
+		A0F256A51611CA01007B3EBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0F2569E1611CA01007B3EBB /* DeskBrowser-Helper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0F256871611CA01007B3EBB;
+			remoteInfo = "DeskBrowser-HelperTests";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A0F255EA1611C5EA007B3EBB /* Copy Helper App */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				A0F256A71611CA13007B3EBB /* DeskBrowser-Helper.app in Copy Helper App */,
+			);
+			name = "Copy Helper App";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A0225C9B1511A67B00313CB9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A061C79C16242C5D005C41CB /* DeskBrowserIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = DeskBrowserIcon.icns; sourceTree = "<group>"; };
+		A061C79E16242C69005C41CB /* DeskBrowserIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = DeskBrowserIcon.icns; sourceTree = SOURCE_ROOT; };
+		A07FB1E7153D00BA00F4BE69 /* DbPlaqueIconiCloud-Round.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "DbPlaqueIconiCloud-Round.icns"; sourceTree = "<group>"; };
+		A0BFA8C913BD8BEA005E15EF /* DeskBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeskBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0BFA8D013BD8BEA005E15EF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A0BFA8D113BD8BEA005E15EF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A0BFA8D213BD8BEA005E15EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A0BFA8D513BD8BEA005E15EF /* DeskBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DeskBrowser-Info.plist"; sourceTree = "<group>"; };
+		A0BFA8D713BD8BEA005E15EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A0BFA8D913BD8BEA005E15EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0BFA8DB13BD8BEA005E15EF /* DeskBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeskBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		A0BFA8DD13BD8BEA005E15EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		A0BFA8DF13BD8BEA005E15EF /* DeskBrowserAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeskBrowserAppDelegate.h; sourceTree = "<group>"; };
+		A0BFA8E013BD8BEA005E15EF /* DeskBrowserAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeskBrowserAppDelegate.m; sourceTree = "<group>"; };
+		A0BFA8E313BD8BEA005E15EF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A0BFA8E613BD8BEA005E15EF /* DeskBrowser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeskBrowser.xcdatamodel; sourceTree = "<group>"; };
+		A0BFA8ED13BD8BEA005E15EF /* DeskBrowserTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeskBrowserTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0BFA8EE13BD8BEA005E15EF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A0BFA8F513BD8BEA005E15EF /* DeskBrowserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DeskBrowserTests-Info.plist"; sourceTree = "<group>"; };
+		A0BFA8F713BD8BEA005E15EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A0BFA8F913BD8BEA005E15EF /* DeskBrowserTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeskBrowserTests.h; sourceTree = "<group>"; };
+		A0BFA8FB13BD8BEA005E15EF /* DeskBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeskBrowserTests.m; sourceTree = "<group>"; };
+		A0BFA90513BD8BF8005E15EF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A0E3E1501766B3AB00AD6786 /* SocialNetSupporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialNetSupporter.h; sourceTree = "<group>"; };
+		A0E3E1511766B3AB00AD6786 /* SocialNetSupporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialNetSupporter.m; sourceTree = "<group>"; };
+		A0F255EC1611C653007B3EBB /* DeskBrowser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DeskBrowser.entitlements; sourceTree = "<group>"; };
+		A0F256431611C9BC007B3EBB /* DeskBrowser-HelperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DeskBrowser-HelperTests-Info.plist"; sourceTree = "<group>"; };
+		A0F256451611C9BC007B3EBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A0F256471611C9BC007B3EBB /* DeskBrowser_HelperTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeskBrowser_HelperTests.h; sourceTree = "<group>"; };
+		A0F256481611C9BC007B3EBB /* DeskBrowser_HelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeskBrowser_HelperTests.m; sourceTree = "<group>"; };
+		A0F2569E1611CA01007B3EBB /* DeskBrowser-Helper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "DeskBrowser-Helper.xcodeproj"; path = "DeskBrowser-Helper/DeskBrowser-Helper.xcodeproj"; sourceTree = "<group>"; };
+		A0F256A81611CA72007B3EBB /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0BFA8C613BD8BEA005E15EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0F256A91611CA72007B3EBB /* ServiceManagement.framework in Frameworks */,
+				A0225C9C1511A67B00313CB9 /* Cocoa.framework in Frameworks */,
+				A0BFA90713BD8BFC005E15EF /* AppKit.framework in Frameworks */,
+				A0BFA90613BD8BF8005E15EF /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0BFA8E913BD8BEA005E15EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0BFA8EF13BD8BEA005E15EF /* SenTestingKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0BFA8BE13BD8BEA005E15EF = {
+			isa = PBXGroup;
+			children = (
+				A0F2569E1611CA01007B3EBB /* DeskBrowser-Helper.xcodeproj */,
+				A07FB1E7153D00BA00F4BE69 /* DbPlaqueIconiCloud-Round.icns */,
+				A0BFA8D313BD8BEA005E15EF /* DeskBrowser */,
+				A0BFA8F313BD8BEA005E15EF /* DeskBrowserTests */,
+				A0F256411611C9BC007B3EBB /* DeskBrowser-HelperTests */,
+				A0BFA8CC13BD8BEA005E15EF /* Frameworks */,
+				A0BFA8CA13BD8BEA005E15EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0BFA8CA13BD8BEA005E15EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0BFA8C913BD8BEA005E15EF /* DeskBrowser.app */,
+				A0BFA8ED13BD8BEA005E15EF /* DeskBrowserTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0BFA8CC13BD8BEA005E15EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0BFA90513BD8BF8005E15EF /* WebKit.framework */,
+				A0225C9B1511A67B00313CB9 /* Cocoa.framework */,
+				A0BFA8EE13BD8BEA005E15EF /* SenTestingKit.framework */,
+				A0BFA8CF13BD8BEA005E15EF /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0BFA8CF13BD8BEA005E15EF /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0F256A81611CA72007B3EBB /* ServiceManagement.framework */,
+				A0BFA8D013BD8BEA005E15EF /* AppKit.framework */,
+				A0BFA8D113BD8BEA005E15EF /* CoreData.framework */,
+				A0BFA8D213BD8BEA005E15EF /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A0BFA8D313BD8BEA005E15EF /* DeskBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				A0F255EC1611C653007B3EBB /* DeskBrowser.entitlements */,
+				A0BFA8DF13BD8BEA005E15EF /* DeskBrowserAppDelegate.h */,
+				A0BFA8E013BD8BEA005E15EF /* DeskBrowserAppDelegate.m */,
+				A0E3E1501766B3AB00AD6786 /* SocialNetSupporter.h */,
+				A0E3E1511766B3AB00AD6786 /* SocialNetSupporter.m */,
+				A0BFA8E213BD8BEA005E15EF /* MainMenu.xib */,
+				A0BFA8E513BD8BEA005E15EF /* DeskBrowser.xcdatamodeld */,
+				A0BFA8D413BD8BEA005E15EF /* Supporting Files */,
+			);
+			path = DeskBrowser;
+			sourceTree = "<group>";
+		};
+		A0BFA8D413BD8BEA005E15EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A061C79E16242C69005C41CB /* DeskBrowserIcon.icns */,
+				A061C79C16242C5D005C41CB /* DeskBrowserIcon.icns */,
+				A0BFA8D513BD8BEA005E15EF /* DeskBrowser-Info.plist */,
+				A0BFA8D613BD8BEA005E15EF /* InfoPlist.strings */,
+				A0BFA8D913BD8BEA005E15EF /* main.m */,
+				A0BFA8DB13BD8BEA005E15EF /* DeskBrowser-Prefix.pch */,
+				A0BFA8DC13BD8BEA005E15EF /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0BFA8F313BD8BEA005E15EF /* DeskBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0BFA8F913BD8BEA005E15EF /* DeskBrowserTests.h */,
+				A0BFA8FB13BD8BEA005E15EF /* DeskBrowserTests.m */,
+				A0BFA8F413BD8BEA005E15EF /* Supporting Files */,
+			);
+			path = DeskBrowserTests;
+			sourceTree = "<group>";
+		};
+		A0BFA8F413BD8BEA005E15EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0BFA8F513BD8BEA005E15EF /* DeskBrowserTests-Info.plist */,
+				A0BFA8F613BD8BEA005E15EF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0F256411611C9BC007B3EBB /* DeskBrowser-HelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0F256471611C9BC007B3EBB /* DeskBrowser_HelperTests.h */,
+				A0F256481611C9BC007B3EBB /* DeskBrowser_HelperTests.m */,
+				A0F256421611C9BC007B3EBB /* Supporting Files */,
+			);
+			path = "DeskBrowser-HelperTests";
+			sourceTree = "<group>";
+		};
+		A0F256421611C9BC007B3EBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0F256431611C9BC007B3EBB /* DeskBrowser-HelperTests-Info.plist */,
+				A0F256441611C9BC007B3EBB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0F2569F1611CA01007B3EBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0F256A41611CA01007B3EBB /* DeskBrowser-Helper.app */,
+				A0F256A61611CA01007B3EBB /* DeskBrowser-HelperTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0BFA8C813BD8BEA005E15EF /* DeskBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0BFA8FF13BD8BEA005E15EF /* Build configuration list for PBXNativeTarget "DeskBrowser" */;
+			buildPhases = (
+				A0BFA8C513BD8BEA005E15EF /* Sources */,
+				A0BFA8C613BD8BEA005E15EF /* Frameworks */,
+				A0BFA8C713BD8BEA005E15EF /* Resources */,
+				A0F255EA1611C5EA007B3EBB /* Copy Helper App */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeskBrowser;
+			productName = DeskBrowser;
+			productReference = A0BFA8C913BD8BEA005E15EF /* DeskBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0BFA8EC13BD8BEA005E15EF /* DeskBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0BFA90213BD8BEB005E15EF /* Build configuration list for PBXNativeTarget "DeskBrowserTests" */;
+			buildPhases = (
+				A0BFA8E813BD8BEA005E15EF /* Sources */,
+				A0BFA8E913BD8BEA005E15EF /* Frameworks */,
+				A0BFA8EA13BD8BEA005E15EF /* Resources */,
+				A0BFA8EB13BD8BEA005E15EF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0BFA8F213BD8BEA005E15EF /* PBXTargetDependency */,
+			);
+			name = DeskBrowserTests;
+			productName = DeskBrowserTests;
+			productReference = A0BFA8ED13BD8BEA005E15EF /* DeskBrowserTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0BFA8C013BD8BEA005E15EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = A0BFA8C313BD8BEA005E15EF /* Build configuration list for PBXProject "DeskBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A0BFA8BE13BD8BEA005E15EF;
+			productRefGroup = A0BFA8CA13BD8BEA005E15EF /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A0F2569F1611CA01007B3EBB /* Products */;
+					ProjectRef = A0F2569E1611CA01007B3EBB /* DeskBrowser-Helper.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A0BFA8C813BD8BEA005E15EF /* DeskBrowser */,
+				A0BFA8EC13BD8BEA005E15EF /* DeskBrowserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A0F256A41611CA01007B3EBB /* DeskBrowser-Helper.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "DeskBrowser-Helper.app";
+			remoteRef = A0F256A31611CA01007B3EBB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A0F256A61611CA01007B3EBB /* DeskBrowser-HelperTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "DeskBrowser-HelperTests.octest";
+			remoteRef = A0F256A51611CA01007B3EBB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0BFA8C713BD8BEA005E15EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0BFA8D813BD8BEA005E15EF /* InfoPlist.strings in Resources */,
+				A0BFA8DE13BD8BEA005E15EF /* Credits.rtf in Resources */,
+				A0BFA8E413BD8BEA005E15EF /* MainMenu.xib in Resources */,
+				A07FB1E8153D00BA00F4BE69 /* DbPlaqueIconiCloud-Round.icns in Resources */,
+				A061C79D16242C5D005C41CB /* DeskBrowserIcon.icns in Resources */,
+				A061C79F16242C69005C41CB /* DeskBrowserIcon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0BFA8EA13BD8BEA005E15EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0BFA8F813BD8BEA005E15EF /* InfoPlist.strings in Resources */,
+				A0BFA8FA13BD8BEA005E15EF /* DeskBrowserTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0BFA8EB13BD8BEA005E15EF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0BFA8C513BD8BEA005E15EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0BFA8DA13BD8BEA005E15EF /* main.m in Sources */,
+				A0BFA8E113BD8BEA005E15EF /* DeskBrowserAppDelegate.m in Sources */,
+				A0BFA8E713BD8BEA005E15EF /* DeskBrowser.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0BFA8E813BD8BEA005E15EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0BFA8FC13BD8BEA005E15EF /* DeskBrowserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0BFA8F213BD8BEA005E15EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0BFA8C813BD8BEA005E15EF /* DeskBrowser */;
+			targetProxy = A0BFA8F113BD8BEA005E15EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0BFA8D613BD8BEA005E15EF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0BFA8D713BD8BEA005E15EF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A0BFA8DC13BD8BEA005E15EF /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0BFA8DD13BD8BEA005E15EF /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		A0BFA8E213BD8BEA005E15EF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0BFA8E313BD8BEA005E15EF /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		A0BFA8F613BD8BEA005E15EF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0BFA8F713BD8BEA005E15EF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A0F256441611C9BC007B3EBB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0F256451611C9BC007B3EBB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0BFA8FD13BD8BEA005E15EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A0BFA8FE13BD8BEA005E15EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A0BFA90013BD8BEA005E15EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = DeskBrowser/DeskBrowser.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeskBrowser/DeskBrowser-Prefix.pch";
+				INFOPLIST_FILE = "DeskBrowser/DeskBrowser-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A0BFA90113BD8BEA005E15EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = DeskBrowser/DeskBrowser.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeskBrowser/DeskBrowser-Prefix.pch";
+				INFOPLIST_FILE = "DeskBrowser/DeskBrowser-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A0BFA90313BD8BEB005E15EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DeskBrowser.app/Contents/MacOS/DeskBrowser";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeskBrowser/DeskBrowser-Prefix.pch";
+				INFOPLIST_FILE = "DeskBrowserTests/DeskBrowserTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A0BFA90413BD8BEB005E15EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DeskBrowser.app/Contents/MacOS/DeskBrowser";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeskBrowser/DeskBrowser-Prefix.pch";
+				INFOPLIST_FILE = "DeskBrowserTests/DeskBrowserTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0BFA8C313BD8BEA005E15EF /* Build configuration list for PBXProject "DeskBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0BFA8FD13BD8BEA005E15EF /* Debug */,
+				A0BFA8FE13BD8BEA005E15EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0BFA8FF13BD8BEA005E15EF /* Build configuration list for PBXNativeTarget "DeskBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0BFA90013BD8BEA005E15EF /* Debug */,
+				A0BFA90113BD8BEA005E15EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0BFA90213BD8BEB005E15EF /* Build configuration list for PBXNativeTarget "DeskBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0BFA90313BD8BEB005E15EF /* Debug */,
+				A0BFA90413BD8BEB005E15EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A0BFA8E513BD8BEA005E15EF /* DeskBrowser.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A0BFA8E613BD8BEA005E15EF /* DeskBrowser.xcdatamodel */,
+			);
+			currentVersion = A0BFA8E613BD8BEA005E15EF /* DeskBrowser.xcdatamodel */;
+			path = DeskBrowser.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A0BFA8C013BD8BEA005E15EF /* Project object */;
+}

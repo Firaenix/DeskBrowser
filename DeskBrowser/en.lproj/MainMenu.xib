@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4457.6" systemVersion="12E55" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1060" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4457.6"/>
+        <plugIn identifier="com.apple.WebKitIBPlugin" version="3330"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <action selector="orderFrontStandardAboutPanel:" destination="58" id="142"/>
+                <outlet property="delegate" destination="494" id="985"/>
+                <outlet property="dockMenu" destination="29" id="986"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder">
+            <connections>
+                <action selector="copy:" destination="197" id="224"/>
+                <action selector="cut:" destination="199" id="228"/>
+                <action selector="delete:" destination="202" id="235"/>
+                <action selector="paste:" destination="203" id="226"/>
+                <action selector="pasteAsPlainText:" destination="485" id="486"/>
+                <action selector="redo:" destination="215" id="231"/>
+                <action selector="selectAll:" destination="198" id="232"/>
+                <action selector="toggleFullScreen:" destination="1130" id="1131"/>
+                <action selector="undo:" destination="207" id="223"/>
+            </connections>
+        </customObject>
+        <customObject id="-3" userLabel="Application">
+            <connections>
+                <action selector="terminate:" destination="136" id="449"/>
+            </connections>
+        </customObject>
+        <customObject id="494" customClass="DeskBrowserAppDelegate">
+            <connections>
+                <action selector="FBCheckboxClicked:" destination="684" id="970"/>
+                <action selector="GoogleCheckboxClicked:" destination="1112" id="1129"/>
+                <action selector="OpenURLText:" destination="551" id="1138"/>
+                <action selector="TwitCheckboxClicked:" destination="681" id="987"/>
+                <action selector="changeFacebookTransparency:" destination="671" id="937"/>
+                <action selector="changeGoogleTransparency:" destination="1111" id="1128"/>
+                <action selector="changeTransparency:" destination="547" id="936"/>
+                <action selector="changeTwitTransparency:" destination="675" id="1127"/>
+                <action selector="facebookRedirect:" destination="830" id="917"/>
+                <action selector="gplusRedirect:" destination="842" id="918"/>
+                <action selector="helpRedirect:" destination="901" id="952"/>
+                <action selector="setRefreshInterval:" destination="1103" id="1105"/>
+                <action selector="toggleLaunchAtLogin:" destination="1143" id="1147"/>
+                <action selector="twitterRedirect:" destination="831" id="919"/>
+                <outlet property="ActiveOPSlider" destination="547" id="1018"/>
+                <outlet property="FBActiveOPSlider" destination="671" id="739"/>
+                <outlet property="FBOpacCheckBox" destination="683" id="972"/>
+                <outlet property="FBPrefsWind" destination="665" id="1016"/>
+                <outlet property="GActiveOPSlider" destination="1111" id="1125"/>
+                <outlet property="GOpacCheckBox" destination="1112" id="1124"/>
+                <outlet property="GPrefsWind" destination="1109" id="1121"/>
+                <outlet property="MainWindow" destination="371" id="734"/>
+                <outlet property="OpenURLText" destination="551" id="728"/>
+                <outlet property="PrefsWindow" destination="537" id="731"/>
+                <outlet property="TwitActiveOPSlider" destination="675" id="745"/>
+                <outlet property="TwitOpacityCheckBox" destination="681" id="747"/>
+                <outlet property="TwitPrefsWind" destination="667" id="1017"/>
+                <outlet property="URLIndicator" destination="1132" id="1134"/>
+                <outlet property="WebPage" destination="oDf-6C-Hdw" id="bea-SD-M1r"/>
+                <outlet property="goToFacebook" destination="830" id="837"/>
+                <outlet property="goToHelp" destination="901" id="915"/>
+                <outlet property="launchAtLoginButton" destination="1143" id="1148"/>
+                <outlet property="timerComboBox" destination="1104" id="1107"/>
+            </connections>
+        </customObject>
+        <menu title="AMainMenu" systemMenu="main" id="29">
+            <items>
+                <menuItem title="DeskBrowser" id="56">
+                    <menu key="submenu" title="DeskBrowser" systemMenu="apple" id="57">
+                        <items>
+                            <menuItem title="About DeskBrowser" id="58">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="236">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Social Networks" id="652">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Social Networks" id="653">
+                                    <items>
+                                        <menuItem title="Facebook" id="659">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Facebook" id="660">
+                                                <items>
+                                                    <menuItem title="Facebook_Placeholder" id="661">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <connections>
+                                                            <outlet property="view" destination="666" id="669"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                    <menuItem title="Go to Facebook..." id="830">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                    </menuItem>
+                                                </items>
+                                            </menu>
+                                        </menuItem>
+                                        <menuItem title="Google+" id="840">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Google+" id="841">
+                                                <items>
+                                                    <menuItem title="Google+_Placeholder" id="1118">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <connections>
+                                                            <outlet property="view" destination="1109" id="1119"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                    <menuItem title="Go to Google+..." id="842">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                    </menuItem>
+                                                </items>
+                                            </menu>
+                                        </menuItem>
+                                        <menuItem title="Twitter" id="662">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Twitter" id="663">
+                                                <items>
+                                                    <menuItem title="Twitter_Placeholder" id="664">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <connections>
+                                                            <outlet property="view" destination="668" id="670"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                    <menuItem title="Go to Twitter..." id="831">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                    </menuItem>
+                                                </items>
+                                            </menu>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Preferences…" keyEquivalent="," id="129">
+                                <connections>
+                                    <outlet property="view" destination="538" id="649"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="143">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Help..." id="901">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="Quit DeskBrowser" keyEquivalent="q" id="136"/>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Edit" id="217">
+                    <menu key="submenu" title="Edit" id="205">
+                        <items>
+                            <menuItem title="Undo" keyEquivalent="z" id="207"/>
+                            <menuItem title="Redo" keyEquivalent="Z" id="215">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="206">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Cut" keyEquivalent="x" id="199"/>
+                            <menuItem title="Copy" keyEquivalent="c" id="197"/>
+                            <menuItem title="Paste" keyEquivalent="v" id="203"/>
+                            <menuItem title="Paste and Match Style" keyEquivalent="V" id="485">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Delete" id="202"/>
+                            <menuItem title="Select All" keyEquivalent="a" id="198"/>
+                            <menuItem title="Enter Full Screen" keyEquivalent="f" id="1130">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Navigation" id="767">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Navigation" id="811">
+                        <items>
+                            <menuItem title="Back..." keyEquivalent="" id="812">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                            </menuItem>
+                            <menuItem title="Forward..." keyEquivalent="" id="813">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                            </menuItem>
+                            <menuItem title="Reload..." keyEquivalent="r" id="814"/>
+                            <menuItem isSeparatorItem="YES" id="953"/>
+                            <menuItem title="Zoom In..." keyEquivalent="=" id="955"/>
+                            <menuItem title="Zoom Out..." keyEquivalent="-" id="954"/>
+                            <menuItem title="Revert Size..." id="958">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <window title="DeskBrowser" allowsToolTipsWhenApplicationIsInactive="NO" animationBehavior="default" id="371">
+            <windowStyleMask key="styleMask" titled="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES"/>
+            <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="150" y="40" width="1024" height="670"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <value key="minSize" type="size" width="320" height="480"/>
+            <view key="contentView" id="372">
+                <rect key="frame" x="0.0" y="0.0" width="1024" height="670"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <webView id="oDf-6C-Hdw">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="670"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
+                            <nil key="identifier"/>
+                        </webPreferences>
+                        <connections>
+                            <action selector="goBack:" destination="812" id="V2w-tN-qTF"/>
+                            <action selector="goForward:" destination="813" id="Wen-kZ-eaH"/>
+                            <action selector="makeTextLarger:" destination="955" id="vZN-np-fHP"/>
+                            <action selector="makeTextSmaller:" destination="954" id="mrP-sX-aAg"/>
+                            <action selector="makeTextStandardSize:" destination="958" id="JKQ-9R-3ke"/>
+                            <action selector="reload:" destination="814" id="ci8-AO-Bf7"/>
+                        </connections>
+                    </webView>
+                </subviews>
+            </view>
+        </window>
+        <window title="Preferences - General" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" hasShadow="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="537">
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="109" y="138" width="338" height="112"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <view key="contentView" id="538">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="112"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <slider verticalHuggingPriority="750" id="547">
+                        <rect key="frame" x="62" y="63" width="258" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="548"/>
+                    </slider>
+                    <textField autoresizesSubviews="NO" focusRingType="none" verticalHuggingPriority="750" id="551">
+                        <rect key="frame" x="36" y="88" width="260" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" focusRingType="none" placeholderString="Enter a URL or Search Google" usesSingleLineMode="YES" bezelStyle="round" id="552">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="557">
+                        <rect key="frame" x="3" y="91" width="37" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="URL: " id="558">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="559">
+                        <rect key="frame" x="3" y="68" width="56" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Opacity:" id="560">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="996">
+                        <rect key="frame" x="3" y="39" width="119" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Refresh Interval:" id="997">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <comboBox verticalHuggingPriority="750" id="1103">
+                        <rect key="frame" x="117" y="35" width="204" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" placeholderString="Select Refresh Interval" drawsBackground="YES" numberOfVisibleItems="8" id="1104">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <objectValues>
+                                <string>Never</string>
+                                <string>1 Minute</string>
+                                <string>2 Minutes</string>
+                                <string>5 Minutes</string>
+                                <string>10 Minutes</string>
+                                <string>15 Minutes</string>
+                                <string>30 Minutes</string>
+                                <string>1 Hour</string>
+                                <string>2 Hours</string>
+                            </objectValues>
+                        </comboBoxCell>
+                    </comboBox>
+                    <progressIndicator horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" id="1132">
+                        <rect key="frame" x="304" y="90" width="16" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <outlet property="menu" destination="29" id="1139"/>
+                        </connections>
+                    </progressIndicator>
+                    <segmentedControl verticalHuggingPriority="750" id="1143">
+                        <rect key="frame" x="157" y="6" width="92" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <segmentedCell key="cell" alignment="left" style="texturedSquare" trackingMode="selectOne" id="1144">
+                            <font key="font" metaFont="system"/>
+                            <segments>
+                                <segment label="Yes" width="45"/>
+                                <segment label="No" width="44" selected="YES" tag="1"/>
+                            </segments>
+                        </segmentedCell>
+                    </segmentedControl>
+                    <textField verticalHuggingPriority="750" id="1145">
+                        <rect key="frame" x="3" y="8" width="149" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Launch app at Login:" id="1146">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <connections>
+                <action selector="makeKeyAndOrderFront:" destination="129" id="544"/>
+            </connections>
+        </window>
+        <window title="FBPrefs" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="665">
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="109" y="138" width="244" height="47"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <view key="contentView" id="666">
+                <rect key="frame" x="0.0" y="0.0" width="244" height="47"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <slider verticalHuggingPriority="750" id="671">
+                        <rect key="frame" x="113" y="2" width="117" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="672"/>
+                    </slider>
+                    <button id="683">
+                        <rect key="frame" x="8" y="27" width="209" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Custom Opacity for Facebook" bezelStyle="regularSquare" imagePosition="left" alignment="left" continuous="YES" state="on" inset="2" id="684">
+                            <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="689">
+                        <rect key="frame" x="7" y="6" width="109" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Custom Opacity:" id="690">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+        </window>
+        <window title="TwitPrefs" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="667">
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="109" y="138" width="241" height="47"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <view key="contentView" id="668">
+                <rect key="frame" x="0.0" y="0.0" width="241" height="47"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <slider verticalHuggingPriority="750" id="675">
+                        <rect key="frame" x="113" y="1" width="117" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="678"/>
+                    </slider>
+                    <button id="681">
+                        <rect key="frame" x="8" y="26" width="193" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Custom Opacity for Twitter" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="682">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="693">
+                        <rect key="frame" x="7" y="5" width="109" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Custom Opacity:" id="696">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+        </window>
+        <window title="G+Prefs" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="1108">
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="109" y="138" width="244" height="47"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <view key="contentView" id="1109">
+                <rect key="frame" x="0.0" y="0.0" width="244" height="47"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <slider verticalHuggingPriority="750" id="1111">
+                        <rect key="frame" x="113" y="2" width="117" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="1114"/>
+                    </slider>
+                    <button id="1112">
+                        <rect key="frame" x="8" y="27" width="204" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Custom Opacity for Google+" bezelStyle="regularSquare" imagePosition="left" alignment="left" continuous="YES" state="on" inset="2" id="1113">
+                            <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="1110">
+                        <rect key="frame" x="7" y="6" width="109" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Custom Opacity:" id="1115">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+        </window>
+    </objects>
+    <classes>
+        <class className="DeskBrowserAppDelegate" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DeskBrowserAppDelegate.h"/>
+            <relationships>
+                <relationship kind="action" name="FBCheckboxClicked:"/>
+                <relationship kind="action" name="GoogleCheckboxClicked:"/>
+                <relationship kind="action" name="OpenURLText:"/>
+                <relationship kind="action" name="TwitCheckboxClicked:"/>
+                <relationship kind="action" name="changeFacebookTransparency:"/>
+                <relationship kind="action" name="changeGoogleTransparency:"/>
+                <relationship kind="action" name="changeTransparency:"/>
+                <relationship kind="action" name="changeTwitTransparency:"/>
+                <relationship kind="action" name="facebookRedirect:"/>
+                <relationship kind="action" name="gplusRedirect:"/>
+                <relationship kind="action" name="helpRedirect:"/>
+                <relationship kind="action" name="saveAction:"/>
+                <relationship kind="action" name="setRefreshInterval:"/>
+                <relationship kind="action" name="toggleLaunchAtLogin:"/>
+                <relationship kind="action" name="twitterRedirect:"/>
+                <relationship kind="outlet" name="ActiveOPSlider" candidateClass="NSSlider"/>
+                <relationship kind="outlet" name="FBActiveOPSlider" candidateClass="NSSlider"/>
+                <relationship kind="outlet" name="FBOpacCheckBox" candidateClass="NSButton"/>
+                <relationship kind="outlet" name="FBPrefsWind" candidateClass="NSWindow"/>
+                <relationship kind="outlet" name="GActiveOPSlider" candidateClass="NSSlider"/>
+                <relationship kind="outlet" name="GOpacCheckBox" candidateClass="NSButton"/>
+                <relationship kind="outlet" name="GPrefsWind" candidateClass="NSView"/>
+                <relationship kind="outlet" name="MainWindow" candidateClass="NSWindow"/>
+                <relationship kind="outlet" name="OpenURLText" candidateClass="NSTextField"/>
+                <relationship kind="outlet" name="PrefsWindow" candidateClass="NSWindow"/>
+                <relationship kind="outlet" name="TwitActiveOPSlider" candidateClass="NSSlider"/>
+                <relationship kind="outlet" name="TwitOpacityCheckBox" candidateClass="NSButton"/>
+                <relationship kind="outlet" name="TwitPrefsWind" candidateClass="NSWindow"/>
+                <relationship kind="outlet" name="URLIndicator" candidateClass="NSProgressIndicator"/>
+                <relationship kind="outlet" name="WebPage" candidateClass="WebView"/>
+                <relationship kind="outlet" name="goToFacebook" candidateClass="NSMenuItem"/>
+                <relationship kind="outlet" name="goToHelp" candidateClass="NSMenuItem"/>
+                <relationship kind="outlet" name="launchAtLoginButton" candidateClass="NSSegmentedControl"/>
+                <relationship kind="outlet" name="timerComboBox" candidateClass="NSComboBoxCell"/>
+            </relationships>
+        </class>
+        <class className="WebView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebView.h"/>
+            <relationships>
+                <relationship kind="action" name="reloadFromOrigin:"/>
+            </relationships>
+        </class>
+    </classes>
+</document>
