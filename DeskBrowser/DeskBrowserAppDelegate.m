@@ -407,35 +407,27 @@
     
 	
 	if ( selected == 1 ){
-        NSLog(@"Fired!!!!!!!!!");
 		mins = 1;
     }
 	else if ( selected == 2 ){
-        NSLog(@"Fired!!!!!!!!!");
 		mins = 2;
     }
 	else if ( selected == 3 ){
-        NSLog(@"Fired!!!!!!!!!");
 		mins = 5;
     }
 	else if ( selected == 4 ){
-        NSLog(@"Fired!!!!!!!!!");
 		mins = 10;
     }
 	else if ( selected == 5 ){
-        NSLog(@"Fired!!!!!!!!!");
 		mins = 15;
     }
 	else if ( selected == 6 ){
-        NSLog(@"Fired!!!!!!!!!");
 		mins = 30;
     }
 	else if ( selected == 7 ){
-        NSLog(@"Fired!!!!!!!!!");
 		mins = 60;
     }
 	else if ( selected == 8 ){
-        NSLog(@"Fired!!!!!!!!!");
 		mins = 2 * 60;
     }
     
@@ -457,7 +449,7 @@
 	}
 	
 	if ( mins == 0 ){
-        NSLog(@"Starting Timer!");
+        NSLog(@"Starting Timer");
 		return;
     }
 	timer = [NSTimer scheduledTimerWithTimeInterval:(mins * 60) target:self selector:@selector(refreshTimerFired:) userInfo:nil repeats:YES];
@@ -532,15 +524,6 @@
     }
     return NO;
 }
-/*
- ----------------------------------NOTE IF THIS IS RELEASED, IT CAUSES SIGABRT ON STARTUP--------------------------------
- 
--(void)release{
-    //[launchAtLoginButton release];
-    [MainWindow release];
-}*/
-
-//all code below here is to write and retrieve cached information files from the users Core Data Library files and some other house cleaning initialisation work for the Cocoa framework.
 
 
 /**
